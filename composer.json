@@ -1,0 +1,5 @@
+{
+    "name": "iqual/all4schools_connector",
+    "description": "Provides integration with the All4Schools software",
+    "type": "drupal-custom-module"
+}

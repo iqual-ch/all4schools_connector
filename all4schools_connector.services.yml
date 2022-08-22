@@ -1,0 +1,7 @@
+services:
+  all4school_connector.client:
+    class: Drupal\all4school_connector\Service\All4SchoolsClient
+    arguments: ['@http_client_factory']
+  plugin.manager.all4school_connector:
+    class: Drupal\all4school_connector\Plugin\All4SchoolsConnectorPluginManager
+    parent: default_plugin_manager

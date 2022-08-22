@@ -1,0 +1,6 @@
+name: 'All4Schools API'
+description: 'Provides integration with the All4Schools Software.'
+type: module
+core_version_requirement: ^8 || ^9
+configure: all4schools_connector.settings
+package: 'Other'

@@ -1,0 +1,13 @@
+all4schools_connector.settings:
+  type: config_object
+  label: 'All4Schools Connector settings'
+  mapping:
+    base_url:
+      type: string
+      label: 'Base url'
+    request_id:
+      type: string
+      label: 'Request Id'
+    app_user_id:
+      type: string
+      label: 'App User ID'
