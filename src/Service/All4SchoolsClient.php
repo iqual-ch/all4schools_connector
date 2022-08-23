@@ -64,7 +64,7 @@ class All4SchoolsClient implements ContainerInjectionInterface {
    */
   protected function getConfig($name) {
 
-    return $this->config->get('all4schools_connector.settings.' . $name);
+    return $this->config->get($name);
   }
 
   /**
