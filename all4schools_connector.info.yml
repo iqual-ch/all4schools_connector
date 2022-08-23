@@ -1,4 +1,4 @@
-name: 'All4Schools API'
+name: 'All4Schools Connector'
 description: 'Provides integration with the All4Schools Software.'
 type: module
 core_version_requirement: ^8 || ^9

@@ -1,5 +1,5 @@
 all4schools_connector.settings:
-  title: 'All4Schools API settings'
+  title: 'All4Schools Connector settings'
   parent: system.admin_config_services
   description: 'Configure credentials and basic settings for the All4Schools Connector.'
   route_name: all4schools_connector.settings

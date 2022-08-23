@@ -1,8 +1,8 @@
 all4schools_connector.settings:
   path: '/admin/config/services/All4Schools'
   defaults:
-    _form: 'Drupal\all4schools_connector\Form\All4SchoolsSettingsForm'
-    _title: 'All4Schools API settings'
+    _form: 'Drupal\all4schools_connector\Form\All4SchoolsConnectorSettingsForm'
+    _title: 'All4Schools API Connector'
   options:
     _admin_route: TRUE
   requirements:
