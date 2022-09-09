@@ -72,6 +72,8 @@ class All4SchoolsClient implements ContainerInjectionInterface {
    *
    * @param string $uri
    *   The endpoint uri.
+   * @param array $args
+   *   Optional query parameters array.
    * @param int $school
    *   The school id, defaults to 1.
    * @param string $requestId
@@ -80,14 +82,18 @@ class All4SchoolsClient implements ContainerInjectionInterface {
    * @return array
    *   Returns an array of course info.
    */
-  public function request(string $uri, int $school = 1, string $requestId = 'af56aae1d88ea4d75664bc721c0dcafd93690c7d') {
-    $data = [
-      'query' => [
-        'schools' => $school,
-        'requestId' => $requestId,
-      ],
+  public function request(string $uri, array $args = [], int $school = 1, string $requestId = 'af56aae1d88ea4d75664bc721c0dcafd93690c7d') {
+    $query = [
+      'schools' => $school,
+      'requestId' => $requestId,
     ];
-  
+    if (!empty($args)) {
+      $query = array_merge($query, $args);
+    }
+    $data = [
+      'query' => $query,
+    ];
+
     $response = $this->client->get($uri, $data);
 
     //@TODO: handle errors
