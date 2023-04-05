@@ -1,11 +1,5 @@
 <?php
 
-/**
- * @file
- * Provides \Drupal\all4schools_connector\All4SchoolsConnectorInterface.
- *
- */
-
 namespace Drupal\all4schools_connector;
 
 /**
@@ -14,9 +8,10 @@ namespace Drupal\all4schools_connector;
 interface All4SchoolsConnectorInterface {
 
   /**
-   * Get all courses from All4Schools
+   * Get all courses from All4Schools.
    *
    * @return mixed
    */
   public function getCourses();
+
 }

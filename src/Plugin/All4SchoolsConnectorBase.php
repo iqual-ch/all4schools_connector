@@ -20,4 +20,5 @@ abstract class All4SchoolsConnectorBase extends PluginBase implements All4School
     $courses = $client->request('/Api/Api/CourseWeb/GetAllCourses');
     return $courses;
   }
+
 }

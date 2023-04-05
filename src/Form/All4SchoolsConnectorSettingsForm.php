@@ -2,11 +2,9 @@
 
 namespace Drupal\all4schools_connector\Form;
 
-use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Provide the settings form for the All4Schools Connector.
@@ -48,12 +46,12 @@ class All4SchoolsConnectorSettingsForm extends ConfigFormBase implements Contain
       '#required' => TRUE,
     ];
     $form['app_user_id'] = [
-        '#type' => 'textfield',
-        '#title' => $this->t('App User Id'),
-        '#default_value' => $config->get('app_user_id'),
-        '#description' => $this->t('The client app user id for this All4Schools instance'),
-        '#required' => TRUE,
-      ];
+      '#type' => 'textfield',
+      '#title' => $this->t('App User Id'),
+      '#default_value' => $config->get('app_user_id'),
+      '#description' => $this->t('The client app user id for this All4Schools instance'),
+      '#required' => TRUE,
+    ];
     return parent::buildForm($form, $form_state);
   }
 

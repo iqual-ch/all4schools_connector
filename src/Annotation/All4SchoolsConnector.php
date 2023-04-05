@@ -1,11 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\all4schools_connector\Annotation\All4SchoolsConnector.
- *
- */
-
 namespace Drupal\all4schools_connector\Annotation;
 
 use Drupal\Component\Annotation\Plugin;
@@ -15,7 +9,6 @@ use Drupal\Component\Annotation\Plugin;
  *
  * @see \Drupal\all4schools_connector\Plugin\All4SchoolsConnectorPluginManager
  * @see plugin_api
- *
  *
  * @Annotation
  */

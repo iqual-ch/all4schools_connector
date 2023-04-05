@@ -96,8 +96,7 @@ class All4SchoolsClient implements ContainerInjectionInterface {
 
     $response = $this->client->get($uri, $data);
 
-    //@TODO: handle errors
-
+    // @todo handle errors
     return Json::decode($response->getBody());
   }
 

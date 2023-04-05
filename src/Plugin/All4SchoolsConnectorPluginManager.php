@@ -2,13 +2,13 @@
 
 namespace Drupal\all4schools_connector\Plugin;
 
+use Drupal\all4schools_connector\Annotation\All4SchoolsConnector;
 use Drupal\Core\Cache\CacheBackendInterface;
 use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\Core\Plugin\DefaultPluginManager;
 
 /**
  * A plugin manager for All4Schools connector plugins.
- *
  */
 class All4SchoolsConnectorPluginManager extends DefaultPluginManager {
 
@@ -32,7 +32,7 @@ class All4SchoolsConnectorPluginManager extends DefaultPluginManager {
     $plugin_interface = 'Drupal\all4schools_connector\Plugin\All4SchoolsConnectorInterface';
 
     // The name of the annotation class that contains the plugin definition.
-    $plugin_definition_annotation_name = 'Drupal\all4schools_connector\Annotation\All4SchoolsConnector';
+    $plugin_definition_annotation_name = All4SchoolsConnector::class;
 
     parent::__construct($subdir, $namespaces, $module_handler, $plugin_interface, $plugin_definition_annotation_name);
 
