@@ -29,7 +29,7 @@ class All4SchoolsConnectorPluginManager extends DefaultPluginManager {
     // The name of the interface that plugins should adhere to. Drupal will
     // enforce this as a requirement. If a plugin does not implement this
     // interface, than Drupal will throw an error.
-    $plugin_interface = 'Drupal\all4schools_connector\Plugin\All4SchoolsConnectorInterface';
+    $plugin_interface = All4SchoolsConnectorInterface::class;
 
     // The name of the annotation class that contains the plugin definition.
     $plugin_definition_annotation_name = All4SchoolsConnector::class;
