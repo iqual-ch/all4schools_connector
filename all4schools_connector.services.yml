@@ -3,5 +3,5 @@ services:
     class: Drupal\all4schools_connector\Service\All4SchoolsClient
     arguments: ['@http_client_factory', '@config.factory', '@logger.factory']
   plugin.manager.all4schools_connector:
-    class: Drupal\all4school_connectors\Plugin\All4SchoolsConnectorPluginManager
+    class: Drupal\all4schools_connector\Plugin\All4SchoolsConnectorPluginManager
     parent: default_plugin_manager
