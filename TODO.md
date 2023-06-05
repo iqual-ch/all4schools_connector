@@ -6,6 +6,7 @@ Remaining work to be done on this module:
 
 - [ ] Add Data mapper plugin type and corresponding interface
 - [ ] Create Unit Tests
+- [ ] Make module open source
 
 # DONE
 
