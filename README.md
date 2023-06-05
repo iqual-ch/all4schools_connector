@@ -20,3 +20,18 @@ This should be communicated byt the client / owner of the API.
 3. Additionnaly, some implementations might require
 an AppUserId for POST requests.
 This should be communicated byt the client / owner of the API.
+
+## Tests
+There is no unit testing available for now.
+If you want to quickly test the connector, you can create
+a script.php file in a custom module and instantiate the example plugin:
+```
+<?php
+
+$plugin_manager = \Drupal::service('plugin.manager.all4schools_connector');
+$plugin_instance = $plugin_manager->createInstance('example_all4schools_connector');
+
+// Test any method
+$all_courses = $plugin_instance->getCourses();
+```
+Check in Lastpass for working API Endpoints / request_id
