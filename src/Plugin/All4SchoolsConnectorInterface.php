@@ -26,4 +26,15 @@ interface All4SchoolsConnectorInterface {
    */
   public function getSingleCourse(int $course_id);
 
+  /**
+   * Post a course registration to All4Schools.
+   *
+   * @param array $data
+   *   The registration data.
+   *
+   * @return array
+   *   The All4Schools response body in an array.
+   */
+  public function postRegistration(array $data);
+
 }

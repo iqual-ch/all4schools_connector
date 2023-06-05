@@ -82,6 +82,8 @@ class All4SchoolsClient {
   /**
    * Get the offers from All4Schools.
    *
+   * @param string $method
+   *   The Http method.
    * @param string $uri
    *   The endpoint uri.
    * @param array $args
@@ -94,7 +96,7 @@ class All4SchoolsClient {
    * @return array
    *   Returns an array of course info.
    */
-  public function request(string $uri, array $args = [], int $school = 1, string $requestId = 'af56aae1d88ea4d75664bc721c0dcafd93690c7d') {
+  public function request(string $method, string $uri, array $args = [], int $school = 1, string $requestId = 'af56aae1d88ea4d75664bc721c0dcafd93690c7d') {
     $query = [
       'schools' => $school,
       'requestId' => $requestId,
@@ -106,7 +108,7 @@ class All4SchoolsClient {
       'query' => $query,
     ];
     try {
-      $response = $this->client->get($uri, $data);
+      $response = $this->client->request($method, $uri, $data);
       return Json::decode($response->getBody());
     }
     catch (GuzzleException $error) {

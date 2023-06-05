@@ -55,7 +55,7 @@ abstract class All4SchoolsConnectorBase extends PluginBase implements ContainerF
    * {@inheritdoc}
    */
   public function getCourses() {
-    $courses = $this->client->request('/Api/Api/CourseWeb/GetAllCourses');
+    $courses = $this->client->request('GET', '/Api/Api/CourseWeb/GetAllCourses');
     return $courses;
   }
 
@@ -63,8 +63,16 @@ abstract class All4SchoolsConnectorBase extends PluginBase implements ContainerF
    * {@inheritdoc}
    */
   public function getSingleCourse($course_id) {
-    $course = $this->client->request('/Api/Api/CourseWeb/GetCourseData');
+    $course = $this->client->request('GET', '/Api/Api/CourseWeb/GetCourseData');
     return $course;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function postRegistration($data) {
+    $response = $this->client->request('POST', '/Api/Api/CourseWeb/AddCourseParticipantWithoutFiles');
+    return $response;
   }
 
 }
