@@ -50,7 +50,6 @@ class All4SchoolsConnectorSettingsForm extends ConfigFormBase implements Contain
       '#title' => $this->t('App User Id'),
       '#default_value' => $config->get('app_user_id'),
       '#description' => $this->t('The client app user id for this All4Schools instance'),
-      '#required' => TRUE,
     ];
     return parent::buildForm($form, $form_state);
   }
