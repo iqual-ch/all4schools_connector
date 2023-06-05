@@ -63,7 +63,13 @@ abstract class All4SchoolsConnectorBase extends PluginBase implements ContainerF
    * {@inheritdoc}
    */
   public function getSingleCourse($course_id) {
-    $course = $this->client->request('GET', '/Api/Api/CourseWeb/GetCourseData');
+    $course = $this->client->request(
+      'GET',
+      '/Api/Api/CourseWeb/GetCourseData',
+      [
+        'courseId' => $course_id,
+      ]
+    );
     return $course;
   }
 
