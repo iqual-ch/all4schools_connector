@@ -2,10 +2,10 @@
 
 namespace Drupal\all4schools_connector\Plugin;
 
-use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
-use Drupal\Component\Plugin\PluginBase;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\all4schools_connector\Service\All4SchoolsClient;
+use Drupal\Component\Plugin\PluginBase;
+use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Provides a base implementation of an All4SchoolsConnector.
