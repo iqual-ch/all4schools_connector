@@ -1,3 +1,9 @@
+<?php
+
+/**
+ * @file
+ */
+?>
 # all4schools_connector
 This module deals with retrieving data, error management and support
 for webform data submission to All4Schools.
@@ -31,7 +37,7 @@ a script.php file in a custom module and instantiate the example plugin:
 $plugin_manager = \Drupal::service('plugin.manager.all4schools_connector');
 $plugin_instance = $plugin_manager->createInstance('example_all4schools_connector');
 
-// Test any method
+// Test any method.
 $all_courses = $plugin_instance->getCourses();
 ```
 Check in Lastpass for working API Endpoints / request_id
