@@ -1,6 +1,6 @@
 name: 'All4Schools Connector'
 description: 'Provides integration with the All4Schools Software.'
 type: module
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9.5 || ^10
 configure: all4schools_connector.settings
 package: 'Other'
