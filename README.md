@@ -1,9 +1,3 @@
-<?php
-
-/**
- * @file
- */
-?>
 # all4schools_connector
 This module deals with retrieving data, error management and support
 for webform data submission to All4Schools.
