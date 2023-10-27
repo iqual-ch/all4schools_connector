@@ -2,13 +2,13 @@
 
 namespace Drupal\all4schools_connector\Service;
 
-use GuzzleHttp\Exception\GuzzleException;
 use Drupal\Component\Render\FormattableMarkup;
 use Drupal\Component\Serialization\Json;
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Http\ClientFactory;
 use Drupal\Core\Logger\LoggerChannelFactory;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
+use GuzzleHttp\Exception\GuzzleException;
 
 /**
  * Client for All4Schools API.
